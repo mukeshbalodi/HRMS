@@ -6,8 +6,8 @@
       <class name="TestCases.HRIS_Local">
         <methods>
           <include name="setupClass"/>
+          <include name="addNewEmployee"/>
           <include name="teardownClass"/>
-          <include name="applyForLeave"/>
           <include name="captureResult"/>
           <include name="tearDownSuite"/>
           <include name="setupReport"/>

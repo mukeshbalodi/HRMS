@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="19" total="20" passed="1" failed="0" skipped="0">
+<testng-results ignored="19" total="20" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-22T09:53:32 IST" name="Default suite" finished-at="2025-05-22T09:53:39 IST" duration-ms="6899">
+  <suite started-at="2025-05-22T12:35:41 IST" name="Default suite" finished-at="2025-05-22T12:35:58 IST" duration-ms="16706">
     <groups>
     </groups>
-    <test started-at="2025-05-22T09:53:32 IST" name="Default test" finished-at="2025-05-22T09:53:39 IST" duration-ms="6899">
+    <test started-at="2025-05-22T12:35:41 IST" name="Default test" finished-at="2025-05-22T12:35:58 IST" duration-ms="16706">
       <class name="TestCases.HRIS_Local">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:TestCases.HRIS_Local@71e9ddb4]" started-at="2025-05-22T09:53:31 IST" name="setupReport" finished-at="2025-05-22T09:53:32 IST" duration-ms="187" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:TestCases.HRIS_Local@71e9ddb4]" started-at="2025-05-22T12:35:41 IST" name="setupReport" finished-at="2025-05-22T12:35:41 IST" duration-ms="144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.HRIS_Local@71e9ddb4]" started-at="2025-05-22T09:53:32 IST" name="setupClass" finished-at="2025-05-22T09:53:33 IST" duration-ms="1650" status="PASS">
+        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.HRIS_Local@71e9ddb4]" started-at="2025-05-22T12:35:41 IST" name="setupClass" finished-at="2025-05-22T12:35:43 IST" duration-ms="1931" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,37 +35,100 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClass -->
-        <test-method is-config="true" signature="loginOnce()[pri:0, instance:TestCases.HRIS_Local@71e9ddb4]" started-at="2025-05-22T09:53:33 IST" name="loginOnce" finished-at="2025-05-22T09:53:38 IST" duration-ms="4530" status="PASS">
+        <test-method is-config="true" signature="loginOnce()[pri:0, instance:TestCases.HRIS_Local@71e9ddb4]" started-at="2025-05-22T12:35:43 IST" name="loginOnce" finished-at="2025-05-22T12:35:48 IST" duration-ms="4971" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginOnce -->
-        <test-method signature="applyForLeave()[pri:0, instance:TestCases.HRIS_Local@71e9ddb4]" started-at="2025-05-22T09:53:38 IST" name="applyForLeave" finished-at="2025-05-22T09:53:38 IST" duration-ms="485" status="PASS">
+        <test-method signature="addNewEmployee()[pri:1, instance:TestCases.HRIS_Local@71e9ddb4]" started-at="2025-05-22T12:35:48 IST" name="addNewEmployee" finished-at="2025-05-22T12:35:57 IST" duration-ms="9396" status="FAIL">
+          <exception class="org.openqa.selenium.NoAlertPresentException">
+            <message>
+              <![CDATA[no such alert
+  (Session info: chrome=136.0.7103.114)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [347fd277277b6cd2a15b8057297df3ae, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\enque\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55942}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55942/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 347fd277277b6cd2a15b8057297df3ae]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=136.0.7103.114)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [347fd277277b6cd2a15b8057297df3ae, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\enque\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55942}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55942/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 347fd277277b6cd2a15b8057297df3ae
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1194)
+at TestCases.HRIS_Local.addNewEmployee(HRIS_Local.java:84)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- applyForLeave -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:TestCases.HRIS_Local@71e9ddb4]" started-at="2025-05-22T09:53:38 IST" name="captureResult" finished-at="2025-05-22T09:53:38 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- addNewEmployee -->
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:TestCases.HRIS_Local@71e9ddb4]" started-at="2025-05-22T12:35:57 IST" name="captureResult" finished-at="2025-05-22T12:35:57 IST" duration-ms="198" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=applyForLeave status=SUCCESS method=HRIS_Local.applyForLeave()[pri:0, instance:TestCases.HRIS_Local@71e9ddb4] output={null}]]]>
+                <![CDATA[[TestResult name=addNewEmployee status=FAILURE method=HRIS_Local.addNewEmployee()[pri:1, instance:TestCases.HRIS_Local@71e9ddb4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureResult -->
-        <test-method is-config="true" signature="teardownClass(org.testng.ITestContext)[pri:0, instance:TestCases.HRIS_Local@71e9ddb4]" started-at="2025-05-22T09:53:38 IST" name="teardownClass" finished-at="2025-05-22T09:53:39 IST" duration-ms="205" status="PASS">
+        <test-method is-config="true" signature="teardownClass(org.testng.ITestContext)[pri:0, instance:TestCases.HRIS_Local@71e9ddb4]" started-at="2025-05-22T12:35:57 IST" name="teardownClass" finished-at="2025-05-22T12:35:58 IST" duration-ms="184" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4eba373c]]>
+                <![CDATA[org.testng.TestRunner@36776c32]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownClass -->
-        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:TestCases.HRIS_Local@71e9ddb4]" started-at="2025-05-22T09:53:39 IST" name="tearDownSuite" finished-at="2025-05-22T09:53:39 IST" duration-ms="255" status="PASS">
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:TestCases.HRIS_Local@71e9ddb4]" started-at="2025-05-22T12:35:58 IST" name="tearDownSuite" finished-at="2025-05-22T12:35:58 IST" duration-ms="241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->

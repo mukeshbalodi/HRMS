@@ -44,10 +44,10 @@ public class HRIS_Local extends BaseClassLocal {
         getDriver().manage().window().maximize();
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-        page.enterUsername(config.username());
+        page.enterUsername(config.getAppValidUsername());
         getTest().log(Status.INFO, "Valid Username entered");
 
-        page.enterPassword(config.userpassword());
+        page.enterPassword(config.getAppValidPassword());
         getTest().log(Status.INFO, "Valid Password entered");
 
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
@@ -78,9 +78,10 @@ public class HRIS_Local extends BaseClassLocal {
             adminPage.submitForm();
 
             try {
-                WebDriverWait alertWait = new WebDriverWait(getDriver(), Duration.ofSeconds(5));
+                WebDriverWait alertWait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
                 alertWait.until(ExpectedConditions.alertIsPresent());
                 getDriver().switchTo().alert().accept();
+                System.out.println(getDriver().switchTo().alert().getText());
             } catch (TimeoutException e) {
                 System.out.println("No alert appeared.");
             }

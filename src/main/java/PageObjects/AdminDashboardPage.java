@@ -146,6 +146,9 @@ public class AdminDashboardPage {
     @FindBy(id="pf_contribution")
     private WebElement pfContribution;
     
+    @FindBy(id = "employer_pf_contribution")
+    private WebElement employerPf;
+    
     @FindBy(id="retention_bonus")
     private WebElement retentionBonus;
     
@@ -327,8 +330,9 @@ public class AdminDashboardPage {
        conv.sendKeys(row[29]);
        otherAllowances.sendKeys(row[30]);
        pfContribution.sendKeys(row[31]);
-       retentionBonus.sendKeys(row[32]);
-       exgratia.sendKeys(row[33]);
+       employerPf.sendKeys(row[32]);
+       retentionBonus.sendKeys(row[33]);
+       exgratia.sendKeys(row[34]);
        
       
         
