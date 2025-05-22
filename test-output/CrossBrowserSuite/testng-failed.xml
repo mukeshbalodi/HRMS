@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="12" parallel="tests" name="Failed suite [CrossBrowserSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="12" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="browserVersion" value="latest"/>
+    <parameter name="platform" value="local"/>
+    <classes>
+      <class name="TestCases.HRIS_Local">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="generateReport"/>
+          <include name="ValidLogin"/>
+          <include name="setupReport"/>
+          <include name="InValidLogin"/>
+        </methods>
+      </class> <!-- TestCases.HRIS_Local -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [CrossBrowserSuite] -->

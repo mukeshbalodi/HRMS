@@ -1,0 +1,46 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CrossBrowserSuite" parallel="tests" thread-count="5">
+
+    <!-- Chrome on Windows 11 -->
+    <test name="Chrome_Win11">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="browserVersion" value="latest"/>
+        <parameter name="platform" value="Windows 11"/>
+        <classes>
+            <class name="TestCases.herokuapp_Lambda"/>
+        </classes>
+    </test>
+
+    <!-- Firefox on Windows 10 -->
+    <test name="Firefox_Win10">
+        <parameter name="browser" value="Firefox"/>
+        <parameter name="browserVersion" value="latest"/>
+        <parameter name="platform" value="Windows 10"/>
+        <classes>
+            <class name="TestCases.herokuapp_Lambda"/>
+        </classes>
+    </test>
+
+    <!-- Edge on Windows 7 -->
+    <test name="Edge_Win7">
+        <parameter name="browser" value="Edge"/>
+        <parameter name="browserVersion" value="latest"/>
+        <parameter name="platform" value="Windows 7"/>
+        <classes>
+            <class name="TestCases.herokuapp_Lambda"/>
+        </classes>
+    </test>
+
+    <!-- Safari on macOS 14 -->
+    <test name="Safari_Mac14">
+        <parameter name="browser" value="Safari"/>
+        <parameter name="browserVersion" value="latest"/>
+        <parameter name="platform" value="macOS 14"/>
+        <classes>
+            <class name="TestCases.herokuapp_Lambda"/>
+        </classes>
+    </test>
+
+   
+
+</suite>
