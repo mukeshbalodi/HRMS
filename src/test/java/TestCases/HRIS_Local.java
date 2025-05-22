@@ -402,7 +402,7 @@ public class HRIS_Local extends BaseClassLocal {
 
 	   adminPage.exitReasonDropdown();
 	   getTest().log(Status.INFO, "exit reason selected from the dropdown");
-	   adminPage.uploadClearanceForm();
+	   adminPage.uploadClearanceForm(""C:\\Users\\enque\\Downloads\\BA_Finalprojectppt.pdf"");
 	   getTest().log(Status.INFO, "clearance form uploaded successfully");
 	   adminPage.uploadExperienceLetter();
 	   getTest().log(Status.INFO, "experience letter uploaded successfully");
