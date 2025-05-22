@@ -461,8 +461,8 @@ public class AdminDashboardPage {
     new Select(reasonDropdown).selectByValue("Resignation");
     }
     
-    public void uploadClearanceForm() {
-    	uploadClearanceForm.sendKeys("C:\\Users\\enque\\Downloads\\BA_Finalprojectppt.pdf");
+    public void uploadClearanceForm(String clearanceForm) {
+    	uploadClearanceForm.sendKeys(clearanceForm);
     }
     
     public void uploadExperienceLetter() {
