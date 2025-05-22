@@ -55,10 +55,7 @@ Contribution
 ------------
 Contributions are welcome! If you have suggestions or improvements, please fork the repository and submit a pull request.
 
-License
--------
-This project is licensed under the MIT License.
-"""
+
 
 with open("HRMS_README.txt", "w") as file:
     file.write(readme_content)
